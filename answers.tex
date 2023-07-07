@@ -1,0 +1,108 @@
+\section*{Answers}
+
+\subsection*{MATH 235 (Algebra 1)}
+
+\begin{enumerate}
+\item $A \cup B = \{1, 2, 3, 4, 5, 6, 7, 8\}$, $A \cap B = \{4, 5\}$.
+\item Proof: Let $x \in (A \cup B) - B$. Then $x \in A \cup B$ and $x \notin B$. If $x \in A$, then $x \in A - B$. If $x \in B$, then $x \notin B$, which is a contradiction. Therefore, $x \in A - B$. This shows that $(A \cup B) - B \subseteq A - B$. The reverse inclusion $A - B \subseteq (A \cup B) - B$ is obvious.
+\item The function $f$ is not injective because $f(-1) = f(1) = 1$. The function $f$ is not surjective because there is no $x \in \mathbb{R}$ such that $f(x) = -1$.
+\item Proof: Let $r$ be a rational number and $i$ be an irrational number. Suppose $r + i$ is rational. Then $r + i - r = i$ is rational, which is a contradiction.
+\item Proof by contradiction: Suppose there are only finitely many prime numbers $p_1, p_2, ..., p_n$. Consider the number $N = p_1p_2...p_n + 1$. The number $N$ is not divisible by any of the primes $p_1, p_2, ..., p_n$, so $N$ is either prime or has a prime divisor not in the list $p_1, p_2, ..., p_n$. This is a contradiction.
+\item Proof: $|z|^2 = (a + bi)(a - bi) = a^2 + b^2 = z \cdot \overline{z}$.
+\item Proof: $|zw| = |z||w|$.
+\item Proof: $A - \lambda I = \begin{bmatrix} a - \lambda & b \\ c & d - \lambda \end{bmatrix}$, so $\det(A - \lambda I) = (a - \lambda)(d - \lambda) - bc = \lambda^2 - (a + d)\lambda + ad - bc = \lambda^2 - \text{tr}(A)\lambda + \det(A)$.
+\end{enumerate}
+
+\subsection*{MATH 222 (Calculus 3)}
+
+\begin{enumerate}
+\item The Taylor series expansion of $\sin(x)$ at $x = 0$ up to the $x^4$ term is $x - x^3/6$.
+\item $\partial f/\partial x = 2xy$, $\partial f/\partial y = x^2 - 3y^2$.
+\item $\iint_R (2x - y) \, dA = \int_1^2 \int_0^1 (2x - y) \, dy \, dx = 1$.
+\item $\int_C \mathbf{F} \cdot d\mathbf{r} = \int_0^1 (t^2, t^2) \cdot (1, 1) \, dt = \int_0^1 2t^2 \, dt = 2/3$.
+\item $\nabla f = (2x, 2y, 2z)$.
+\item $\text{curl} \, \mathbf{F} = (\partial F_3/\partial y - \partial F_2/\partial z, \partial F_1/\partial z - \partial F_3/\partial x, \partial F_2/\partial x - \partial F_1/\partial y) = (1 - 1, 1 - 1, 1 - 1) = (0, 0, 0)$.
+\item $\text{div} \, \mathbf{F} = \partial F_1/\partial x + \partial F_2/\partial y + \partial F_3/\partial z = 0 + 0 + 0 = 0$.
+\item $\iint_S \mathbf{F} \cdot d\mathbf{S} = \int_0^{2\pi} \int_0^\pi (\sin\phi \cos\theta, \sin\phi \sin\theta, \cos\phi) \cdot (\sin\phi \cos\theta, \sin\phi \sin\theta, \cos\phi) \sin\phi \, d\phi \, d\theta = 4\pi$.
+\end{enumerate}
+
+\subsection*{MATH 242 (Analysis 1)}
+
+\begin{enumerate}
+\item Proof: For any $\varepsilon > 0$, choose $N$ such that $N > 1/\varepsilon$. Then for all $n > N$, $|1/n - 0| = 1/n < 1/N < \varepsilon$. Therefore, the sequence $\{1/n\}$ converges to 0.
+\item Proof: Observe that $a_{n+1} - a_n = (1/2)(a_n + 2/a_n) - a_n = 1 - a_n^2/2 \leq 0$ for all $n \geq 1$, so the sequence $\{a_n\}$ is decreasing. Also, $a_n \geq 0$ for all $n \geq 1$, so the sequence $\{a```latex
+\subsection*{MATH 242 (Analysis 1) Continued}
+
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item (Continued) Also, $a_n \geq 0$ for all $n \geq 1$, so the sequence $\{a_n\}$ is bounded below. Therefore, by the Monotone Convergence Theorem, the sequence $\{a_n\}$ converges.
+\item Proof: The series $\sum_{n=1}^\infty 1/n^2$ is a p-series with $p = 2 > 1$, so by the p-Series Test, the series converges.
+\item Proof: For any $\varepsilon > 0$, choose $\delta = \varepsilon$. Then for all $x$ such that $|x - 1| < \delta$, $|f(x) - f(1)| = |x^2 - 1| = |x - 1||x + 1| < \varepsilon|x + 1|$. Since $x$ is close to 1, $|x + 1|$ is close to 2, so $|f(x) - f(1)| < 2\varepsilon$. Therefore, $f$ is continuous at $x = 1$.
+\item Proof by contradiction: Suppose $f$ is uniformly continuous on $(0, 1)$. Then for any $\varepsilon > 0$, there exists $\delta > 0$ such that for all $x, y \in (0, 1)$ with $|x - y| < \delta$, $|f(x) - f(y)| < \varepsilon$. Choose $\varepsilon = 1$ and $x = 1/2$ and $y = 1/2 + \delta/2$. Then $|x - y| = \delta/2 < \delta$, but $|f(x) - f(y)| = |1/2 - 1/(2 + \delta)| = \delta/(2(2 + \delta)) > \delta/8$, which can be made larger than 1 by choosing $\delta$ large enough. This is a contradiction, so $f$ is not uniformly continuous on $(0, 1)$.
+\item Proof: The limit as $h$ approaches 0 of $(f(1 + h) - f(1))/h = ((1 + h)^2 - 1)/h = 2 + h$ exists and is equal to 2, so $f$ is differentiable at $x = 1$.
+\item Proof: The limit as $h$ approaches 0 of $(f(0 + h) - f(0))/h = h/h = 1$ and the limit as $h$ approaches 0 of $(f(0 - h) - f(0))/h = -h/h = -1$ are not equal, so $f$ is not differentiable at $x = 0$.
+\item Proof: For any $\varepsilon > 0$, choose $\delta = \varepsilon$. Then for all $x, y \in \mathbb{R}$ with $|x - y| < \delta$, $|f(x) - f(y)| = |x^3 - y^3| = |(x - y)(x^2 + xy + y^2)| \leq |x - y|(x^2 + xy + y^2) < \delta(3 + 3\delta + \delta^2) = \varepsilon(3 + 3\varepsilon + \varepsilon^2)$, which can be made smaller than $\varepsilon$ by choosing $\varepsilon$ small enough. Therefore, $f$ is uniformly continuous on $\mathbb{R}$.
+\end{enumerate}
+
+\subsection*{COMP 273 (Introduction to Computer Systems)}
+
+\begin{enumerate}
+\item The binary number 101101 is 45 in decimal.
+\item The hexadecimal number A3 is 10100011 in binary.
+\item A simple combinational circuit with two inputs, A and B, and one output, F, such that F = 1 if and only if exactly one of A and B is 1 is an XOR gate.
+\item A MIPS assembly program that computes the factorial of a non-negative integer n is as follows:
+\begin{verbatim}
+    .data
+n:  .word  5  # Change this to the number you want to compute the factorial of
+res: .word  1
+    .text
+    .globl main
+main:
+    la $t0, n
+    lw $t1, 0($t0)
+    la $t0, res
+loop:
+    beqz $```latex
+\subsection*{COMP 273 (Introduction to Computer Systems) Continued}
+
+\begin{enumerate}
+\setcounter{enumi}{3}
+\item (Continued)
+\begin{verbatim}
+    beqz $t1, end
+    lw $t2, 0($t0)
+    mul $t2, $t2, $t1
+    sw $t2, 0($t0)
+    sub $t1, $t1, 1
+    j loop
+end:
+    # The factorial of n is now in the word at address res.
+\end{verbatim}
+\item A direct-mapped cache is a cache where each cache line corresponds to exactly one location in main memory. This location is determined by the address of the data.
+\item Virtual memory is a technique that allows a computer to use more memory than it physically has. It does this by swapping data between main memory and a disk.
+\item Pipelining improves the performance of a computer by allowing multiple instructions to be executed at the same time. Each instruction is divided into stages, and each stage is executed in a different pipeline stage.
+\item An interrupt is a signal to the processor to stop what it is doing and do something else. This can be caused by various events, such as an I/O device needing attention or a user pressing a key.
+\end{enumerate}
+
+\subsection*{COMP 206 (Introduction to Software Systems)}
+
+\begin{enumerate}
+\item A C program that prints "Hello, world!" to the console is as follows:
+\begin{verbatim}
+#include <stdio.h>
+
+int main() {
+    printf("Hello, world!\n");
+    return 0;
+}
+\end{verbatim}
+\item A system call is a way for a program to request a service from the operating system's kernel. This can include services like creating a process, reading from a file, or accessing a device.
+\item A library in C is a collection of functions and declarations that can be used by a C program. Libraries can be statically linked, where the library code is included in the executable file, or dynamically linked, where the library code is loaded at runtime.
+\item A makefile is a file used by the make build automation tool to build and manage projects. It contains rules that specify how to derive the target files from the source files.
+\item Version control systems are tools that keep track of changes to source code and other files. They allow multiple people to work on a project at the same time, and they keep a history of changes so that it is possible to revert to a previous state if necessary.
+\item Debugging is the process of finding and fixing errors in a program. This can be done with the help of debugging tools, which allow the programmer to execute the program step by step, examine the values of variables, and set breakpoints.
+\item Testing is the process of running a program with various inputs to check if it produces the correct outputs. There are various types of testing, including unit testing, integration testing, and system testing.
+\item A pointer in C is a variable that stores the address of another variable. Pointers are used for dynamic memory allocation, data structures like trees and linked lists, and function arguments that need to be modified by the function.
+\end{enumerate}
+
+Remember, these are just sample questions and answers. For a more comprehensive understanding, you should solve more complex problems and exercises from your textbooks or other resources.
