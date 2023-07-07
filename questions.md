@@ -48,4 +48,4 @@
 ## COMP 206 (Introduction to Software Systems)
 
 1. Write a C program that prints "Hello, world!" to the console.
-2. Explain what a system call is andHere are the answers:
+2. Explain what a system call is
