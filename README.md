@@ -1,5 +1,22 @@
 # Study Plan
 
+# Study Plan
+
+- **Time Allocation**: Allocate more time to complex courses like Math 235 and Math 222. Balance understanding concepts and practical exercises for Comp 273 and Comp 206.
+
+- **Understanding Over Memorization**: Focus on understanding the logic behind formulas in math and the workings of algorithms or systems in computer science.
+
+- **Regular Practice**: Regularly solve math problems and write code to apply what you've learned.
+
+- **Use Resources**: Utilize textbooks, online resources, professor office hours, and discussions with classmates.
+
+- **Review and Revise**: Regularly review and revise the material to reinforce your memory and understanding.
+
+- **Health**: Maintain a healthy lifestyle with enough sleep, a balanced diet, and regular exercise.
+
+Remember, the goal is understanding and learning, not just grades. Build a strong foundation in these subjects for future courses and career.
+
+
 ## Week 1: July 10 - July 16: MATH 235 (Algebra 1)
 
 ### July 10-11: Sets
