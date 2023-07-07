@@ -1,6 +1,5 @@
 # Study Plan
 
-# Study Plan
 
 - **Time Allocation**: Allocate more time to complex courses like Math 235 and Math 222. Balance understanding concepts and practical exercises for Comp 273 and Comp 206.
 
